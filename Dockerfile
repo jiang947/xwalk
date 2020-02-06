@@ -14,4 +14,4 @@ WORKDIR /workspace
 RUN cd /workspace \ 
 && gclient config --name src/xwalk https://github.com/jiang947/crosswalk.git
 
-RUN cd /workspace  && echo '\ny' | gclient sync
+RUN cd /workspace  && echo '\ny' | gclient sync --nohooks
